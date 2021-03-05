@@ -1,0 +1,48 @@
+package academy.learnprogramming;
+import java.util.Scanner;
+
+public class size_conv {
+
+    // Getting the data from input
+
+    public static double size_to_conv()
+    {
+
+        System.out.println("Please give the size in MB!");
+        Scanner scan = new Scanner(System.in);
+        double size = scan.nextInt();
+
+        return size;
+    }
+
+    // Converting the MB to kB
+
+    public static double[] mb_to_kb_conv(double size){
+
+        double remainder = size % 1000;
+        double result = (size - remainder) / 1000;
+
+        double[] result_vector = new double[2];
+
+        result_vector[0] = result;
+        result_vector[1] = remainder;
+
+        return result_vector;
+    }
+
+    // Printing the result
+
+    public static void result_printer(double size, double [] result_vector) {
+
+        System.out.print(size + " kB = " + result_vector[0] + " MB");
+
+        if(result_vector[1] > 0){
+            System.out.print(" and " + result_vector[1] + " KB");
+        }
+
+    }
+
+
+
+}
+

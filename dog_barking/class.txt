@@ -1,0 +1,60 @@
+package academy.learnprogramming;
+import java.util.Random;
+
+public class size_conv {
+
+    // Generating random boolean to see if the dog is barking
+
+    public static boolean is_barking(){
+
+        Random rand = new Random();
+
+        double double_random = rand.nextDouble();
+
+        if(double_random > 0.5){
+            boolean answer = true;
+            return answer;
+        }
+
+        else{
+            boolean answer = false;
+            return answer;
+        }
+    }
+
+    // Generating random hour
+
+    public static int time(){
+
+        Random rand = new Random();
+
+        int current_time = rand.nextInt(25);
+        return current_time;
+    }
+
+    // Printing out the results
+
+    public static void result_print(boolean answer, int current_time){
+
+        if (answer == false){
+            System.out.println("The dog is not barking at " + current_time + " o’clock.");
+        }
+
+        else{
+
+            System.out.println("The dog is barking at " + current_time + " o’clock.");
+
+            if (current_time > 22 || current_time < 8){
+                System.out.println("We should calm him down.");
+            }
+
+            else{
+                System.out.println("Barking is fine.");
+            }
+        }
+
+    }
+
+
+}
+

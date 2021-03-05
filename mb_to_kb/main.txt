@@ -1,0 +1,18 @@
+package academy.learnprogramming;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //calling the method to get an input
+        double size = size_conv.size_to_conv();
+
+        //calling the method to calculate the results in MB
+        double results_vec[] = size_conv.mb_to_kb_conv(size);
+
+        //calling the method to print out the results
+        size_conv.result_printer(size, results_vec);
+    }
+
+}
+

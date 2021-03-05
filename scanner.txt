@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Class1 {
+
+    public static void method1() {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("When were you born?");
+
+        int year_of_birth = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println("What is your name?");
+
+        String name = scanner.nextLine();
+
+        scanner.close();
+
+        int age = 2021 - year_of_birth;
+
+        System.out.println("You are " + age + " years old and your name is " + name + ".");
+
+    }
+}
+

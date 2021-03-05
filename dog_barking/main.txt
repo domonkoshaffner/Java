@@ -1,0 +1,18 @@
+package academy.learnprogramming;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //generating random boolean
+        boolean bark = size_conv.is_barking();
+
+        //generating random time
+        int time = size_conv.time();
+
+        //printing the results
+        size_conv.result_print(bark, time);
+    }
+
+}
+
