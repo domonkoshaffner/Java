@@ -1,3 +1,3 @@
-Example python projects.
+# Java
 
-2021.02.26.
+This directory contains different simple algorithms implemented in Java programming language. 
